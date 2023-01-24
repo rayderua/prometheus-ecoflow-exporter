@@ -1,0 +1,15 @@
+[Unit]
+Description=Prometheus exporter for machine metrics
+Documentation=https://github.com/rayderua/prometheus-ecoflow-exporter
+
+[Service]
+Restart=on-failure
+User=prometheus
+EnvironmentFile=/etc/default/prometheus-ecoflow-exporter
+ExecStart=/usr/bin/prometheus-ecoflow-exporter $ARGS
+ExecReload=/bin/kill -HUP $MAINPID
+TimeoutStopSec=20s
+SendSIGKILL=no
+
+[Install]
+WantedBy=multi-user.target

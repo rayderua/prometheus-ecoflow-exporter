@@ -1,0 +1,7 @@
+---
+### example
+# - serialNumber: serialNumber        # (required)
+#   appKey: appKey                    # (required)
+#   secretKey: secretKey              # (required)
+#   description: Ecoflow description  # (Optional, will be serialNumber if not set)
+

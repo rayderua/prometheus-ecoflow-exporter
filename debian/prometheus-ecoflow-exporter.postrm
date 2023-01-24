@@ -1,0 +1,18 @@
+#!/bin/sh
+# postrm script for prometheus-ecoflow-exporter
+# Script executed after the package is removed.
+
+set -e
+
+case "$1" in
+  purge)
+        rm -rf /var/lib/prometheus/ecoflow-exporter/ \
+            /var/log/prometheus/prometheus-ecoflow-exporter.log \
+            /var/log/prometheus/prometheus-ecoflow-exporter.log.* \
+            /run/prometheus/prometheus-ecoflow-exporter.pid
+	# We do NOT remove the system user.
+
+	;;
+esac
+
+#DEBHELPER#

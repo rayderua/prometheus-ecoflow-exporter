@@ -1,0 +1,2 @@
+var/lib/prometheus/ecoflow-exporter
+var/log/prometheus

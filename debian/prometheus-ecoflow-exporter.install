@@ -1,0 +1,2 @@
+prometheus-ecoflow-exporter usr/bin
+prometheus-ecoflow-exporter.yaml etc/prometheus

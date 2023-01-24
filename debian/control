@@ -1,0 +1,12 @@
+Source: prometheus-ecoflow-exporter
+Section: devel
+Priority: optional
+Maintainer: builder <builder@build.system>
+Standards-Version: 1.0.1-1~deb11
+Build-Depends: debhelper (>= 8.0.0)
+Homepage: <https://github.com/rayderua/ecoflow_exporter.git>
+
+Package: prometheus-ecoflow-exporter
+Architecture: amd64
+Depends: lsb-base (>= 3.0-6)
+Description: prometheus-ecoflow-exporter
